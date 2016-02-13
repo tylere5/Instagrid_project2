@@ -104,37 +104,35 @@ button {
   background-color: transparent;
 }
 
-.photo-list {
-  align-items: center;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  margin: 0 auto;
-  width: 100%;
-}
-
 .photos {
-  display: block;
-  position: relative;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
 }
 
-/*.photos li {
+.photos li {
   flex: 0 1 100%;
-  width: 100%
-}*/
+}
+
 
 /* Media Q's * ----------------------------------------------- */
 
 /*Mobile*/
-@media (min-width: 420px){
+@media all and (min-width: 420px){
 
-.photos li {
-    flex: 0 1 50% auto;
-    max-width: 50%;
+  .photos {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .photos li {
+    flex: 1 0 50%;
   }
 }
+
 /*Tablet*/
-@media (min-width: 600px){
+@media all and (min-width: 600px){
 
 body,button,input {
   font-size: 10px;
@@ -149,16 +147,12 @@ body,button,input {
   font-size: 11px;
 }
 
-.photos {
-  margin: 0 auto;
-}
-
 .photos li {
   flex-basis: 33.33%;
 }
 }
 /*Desktop*/
-@media (min-width: 1000px){
+@media all and (min-width: 1000px){
   body,button,input {
     font-size: 10px;
   }
@@ -174,12 +168,6 @@ body,button,input {
 
   .search-form{
     max-width: 300px;
-  }
-
-  /*.photos ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; */
   }
 
   .photos li {
