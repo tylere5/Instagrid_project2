@@ -79,7 +79,11 @@ input {
   border: none;
   border-bottom: white 1px solid;
   color: white;
+  outline: none;
   font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  margin-left: 15px;
+  background-color: transparent;
 }
 
 button {
@@ -99,11 +103,6 @@ button {
   height: 90vh;
 }
 
-.search-form input {
-  margin-left: 15px;
-  background-color: transparent;
-}
-
 .photos {
   display: flex;
   align-items: center;
@@ -112,6 +111,12 @@ button {
 
 .photos li {
   flex: 0 1 100%;
+}
+
+.site-footer {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75rem;
+  text-align: center;
 }
 
 
@@ -134,10 +139,6 @@ button {
 /*Tablet*/
 @media all and (min-width: 600px){
 
-body,button,input {
-  font-size: 10px;
-}
-
 .logo-search {
   align-items: center;
   width: 100%;
@@ -153,9 +154,6 @@ body,button,input {
 }
 /*Desktop*/
 @media all and (min-width: 1000px){
-  body,button,input {
-    font-size: 10px;
-  }
 
   .logo-search {
     flex-direction: row;
@@ -172,5 +170,9 @@ body,button,input {
 
   .photos li {
     flex-basis: 25%;
+  }
+
+  .site-footer {
+    margin-left: 35px;
   }
 }
