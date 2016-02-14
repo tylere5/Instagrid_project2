@@ -26,14 +26,9 @@ $(function(){
               $instapics +='<a href=" '+el.link+'"><img src="'+el.images.standard_resolution.url+'" /></a>';
               $instapics +='</div>';
               $instapics +='</li>';
-
         });
 
-
-
-          $input = '';
           $(".photos").append($instapics);
-          $instapics = '';
   });
 });
 });
