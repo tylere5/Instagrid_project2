@@ -1,7 +1,7 @@
 
 //we start a function
 $(function(){
-  var $instapics = "";
+  var $instapics = '';
 //call our button and let it know on 'click' we'll start an event, use event prevent default. then create a var...
 //... called $input, we then call class .hash to get the value.
   $('.button').on('click', function(event){
@@ -22,7 +22,7 @@ $(function(){
       console.log(photoData);
         $.each(photoData.data, function(i, el){
               $instapics +='<li>';
-              $instapics +='<div>';
+              $instapics +='<div class="insta-photo">';
               $instapics +='<a href=" '+el.link+'"><img src="'+el.images.standard_resolution.url+'" /></a>';
               $instapics +='</div>';
               $instapics +='</li>';
